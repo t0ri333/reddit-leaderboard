@@ -1,0 +1,143 @@
+/* Initial Setup */
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
+}
+body {
+    background-color: #030303;
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+}
+
+ol {
+    list-style: none;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    bottom: 8px;
+    left: 16px;
+    position: absolute;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.leaderboard {
+    position: relative;
+    background-color: #1A1A1B;
+    color: #D7DADC;
+    border: 1px solid #474748;
+    border-radius: 4px;
+    width:310px;
+    height: 440px;
+    margin: 40px;
+}
+
+.top::before {
+    background: linear-gradient(0deg,rgba(0,0,0,.7) 0,transparent);
+    content: "";
+    height: 80px;
+    position: absolute;
+    width: 100%;
+}
+.top {
+    background-image: url("https://styles.redditmedia.com/t5_3jj03/styles/bannerBackgroundImage_n9lrc7zxm7j31.jpg?format=pjpg&s=395e95bb331fa2f8682d4d86020025d4caf3edf4");
+    background-position: 50%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    height: 80px;
+    position:relative;
+}
+
+
+.list-item:not(:last-child) {
+    border-bottom: thin solid rgb(52,53,54); 
+}
+
+.list-item-link {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+.list-item-content {
+    display: flex;
+    align-items: center;
+}
+
+.rank {
+    color: #D7DADC;
+    text-align: right;
+    width:20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.icon-upvote{
+    height: 10px;
+    margin-left: 8px;
+    width: 10px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
+}
+
+.view-all {
+    padding: 12px;
+}
+
+.view-all-link {
+    display:block;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #D7DADC;
+    color: #1A1A1B;
+    border-color: #D7DADC;
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;
+}
+
+.category {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 4px 12px 16px;
+}
+
+.category-item {
+    margin: 4px 6px;
+    padding: 8px 12px;  
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #4FBCFF;
+    background:#272729 ;
+    border-radius: 2px;
+}
